@@ -71,6 +71,6 @@ def uploads():
     img = request.files.get('file')
     # name = request.form.get()
 
-    img.save("test/hello111.jpg")
+    img.save("hello111.jpg")
 
     return 'success'
