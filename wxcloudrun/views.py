@@ -73,6 +73,6 @@ def uploads():
 
     img.save("hello111.jpg")
 
-    print(os.listdir())
+    app.logger.info('%s test_info', os.listdir()[0])
 
     return 'success'
