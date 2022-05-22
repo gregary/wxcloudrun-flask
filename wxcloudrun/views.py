@@ -72,7 +72,7 @@ def uploads():
     # name = request.form.get()
 
     img.save("hello111.jpg")
-    print("***test***")
+
     print(os.listdir())
 
     return 'success'
