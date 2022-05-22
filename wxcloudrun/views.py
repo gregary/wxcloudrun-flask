@@ -64,3 +64,13 @@ def get_count():
     """
     counter = Counters.query.filter(Counters.id == 1).first()
     return make_succ_response(0) if counter is None else make_succ_response(counter.count)
+
+
+@app.route('/upload', methods=['GET', 'POST'])
+def uploads():
+    img = request.files.get('file')
+    # name = request.form.get()
+
+    img.save("test/hello111.jpg")
+
+    return 'success'
